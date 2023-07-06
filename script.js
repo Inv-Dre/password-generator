@@ -15,7 +15,7 @@ function writePassword() {
     var numbers = '123456789';
     var alphabet = 'abcdefghijklmnopqrstuvwxyz';
     var upperAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var symbols = '@#$%&*';
+    var symbols = '@#$%&^*_-';
     var allChar = " ";
     var password = ""; 
     // prompt user to enter a value the value will eaual the length of our password
