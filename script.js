@@ -27,8 +27,8 @@ function writePassword() {
   
       return generatePassword();
     }
-//  if the function is cancelled this else if will be checked
-// if userLength is not a number, <8, or >128 the function will start from the beginning
+    //  if the function is cancelled this else if will be checked
+    // if userLength is not a number, <8, or >128 the function will start from the beginning
      else if ( typeof userLength !== "number" || userLength < 8 || userLength >128 ){
 
       return generatePassword();
@@ -38,7 +38,7 @@ function writePassword() {
     else {
       alert("Now it's time to choose character types");
     }
-// asks the user if they want lower case letters
+    // asks the user if they want lower case letters
     var lowerCase = window.confirm('Do you want lower case characters');
     // if they say yes a string of lower case letters is added to the allChar variable
     // if they say no it is not added
@@ -86,4 +86,6 @@ function writePassword() {
   }
 
 
-    
+// Add event listener to generate button
+// when you click the button writePassword begins
+generateBtn.addEventListener("click", writePassword);
